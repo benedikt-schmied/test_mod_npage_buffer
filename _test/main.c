@@ -30,13 +30,17 @@ int main(int argc, char *argv[])
     /* executable statements */
 
     /* fill up the configuration structure */
-    arg.pagesz = 0x20;
+    arg.pagesz  = 0x20;
     arg.seek    = test_seek;
     arg.read    = test_read;
     arg.write   = test_write;
 
     /* call the open function */
     mod_npage_buffer__open(&hdl, &arg);
+
+    mod_npage_buffer__seek(hdl, 100, 0);
+
+    mod_npage_buffer__write(hdl, "Dies ist ein", 20);
     return 0;
 }
 
