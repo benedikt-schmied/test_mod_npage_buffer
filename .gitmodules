@@ -1,0 +1,3 @@
+[submodule "mod_npage_buffer"]
+	path = mod_npage_buffer
+	url = https://github.com/benedikt-schmied/mod_npage_buffer
