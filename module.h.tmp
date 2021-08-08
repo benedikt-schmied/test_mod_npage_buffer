@@ -1,0 +1,76 @@
+/**
+ * \addtogroup {project_name}
+ * \{
+ * \file {project_name}.h
+ *
+ */
+
+#ifndef __{PROJECT_NAME}_H__
+#define __{PROJECT_NAME}_H__
+
+////////////////////////////////////////////////////////////////////////////////
+/// Includes
+////////////////////////////////////////////////////////////////////////////////
+
+/* c - runtime */
+#include <stdint.h>
+#include <stddef.h>
+#include <stdlib.h>
+
+/* system */
+
+/* own libs */
+
+/* project */
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+////////////////////////////////////////////////////////////////////////////////
+/// Macros
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// type definitions, unions, structures
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// interface function
+////////////////////////////////////////////////////////////////////////////////
+
+/**************************************************************************//**
+ * @brief  {project_name}__init
+ *
+ * @param [in,out]   _p         description
+ * @return     0, if successful or < 0, if failed
+ *             + '-1', initialization has failed
+ * ****************************************************************************/
+int {project_name}__init(void *_p);
+
+/**************************************************************************//**
+ * @brief  {project_name}__cleanup
+ *
+ * @param [in,out]   _p         description
+ * @return     0, if successful or < 0, if failed
+ *             + '-1', initialization has failed
+ * ****************************************************************************/
+int {project_name}__cleanup(void *_p);
+
+/**************************************************************************//**
+ * @brief  {project_name}__reinit
+ *
+ * @param [in,out]   _p         description
+ * @return     0, if successful or < 0, if failed
+ *             + '-1', initialization has failed
+ * ****************************************************************************/
+int {project_name}__reinit(void *_p);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+/** \} */
